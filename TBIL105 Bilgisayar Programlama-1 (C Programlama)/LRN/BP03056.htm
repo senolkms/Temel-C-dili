@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>BP03056</title>
+<meta http-equiv="Content-Type" content="text/html; charset=8859-9">
+<link rel="stylesheet" href="abstyle.css" type="text/css">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table width="100%" border="0" cellpadding="15" cellspacing="0">
+  <tr> 
+    <td width="723" valign="top"> 
+      <p class="altbaslik">3.2.3. Döngü sonunda denetim-<b>do..while</b> döngüleri</p>
+      <p><span class="content">Bir önceki sayfada açýklanan while döngülerinde 
+        koþul, bu deyimin tanýmlandýðý noktadan itibaren test edilmektedir. Yani 
+        daha baþlangýçta bu koþul geçerli deðil ise hiç bir deyimi iþlem görmemektedir. 
+        Buna karþýlýk, koþulun döngü bloðunun son satýrýnda yapýlmasý söz konusu 
+        olabilir. Böyle durumlarda <b>do...while</b> deyimleri kullanýlýr. Bu 
+        deyimler yandaki þekilde tanýmlanýr.</span></p>
+      <p class="content">Bu tanýma göre koþul ne olursa olsun, <b>do</b> deyiminden 
+        sonraki döngü bloðundaki deyimler bir kez iþlem görür; blok sonunda <b>while</b> 
+        ile yapýlan teste baðlý olarak döngüye devam edilir yada döngü terkedilir.</p>
+      <table width="550" border="0" cellspacing="0" cellpadding="5" class="imgdesc">
+        <tr> 
+          <td width="295" valign="top"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="220" height="300" align="top">
+              <param name=movie value="pics/B03/BP03055_3.swf">
+              <param name=quality value=high>
+              <embed src="pics/B03/BP03055_3.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="220" height="300" align="top">
+              </embed> 
+            </object><br>
+            <br>
+            <b>Þekil 1:</b> Koþulun döngü sonunda yapýlmasý durumunda do..while 
+            döngüsü kullanýlýr. </td>
+          <td width="295" valign="top"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="220" height="300">
+              <param name=movie value="pics/B03/BP03055_4.swf">
+              <param name=quality value=high>
+              <embed src="pics/B03/BP03055_4.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="220" height="300">
+              </embed> 
+            </object><br>
+            <br>
+            <b>Þekil 2:</b> do..while döngüsünün çalýþma prensibi </td>
+        </tr>
+      </table>
+      <p><span class="content">Bazý uygulamalarda, döngü iþlemi tamamlanmadan döngünün sona erdirilmesi söz konusu olabilir. Bu gibi durumlarda break deyimi kullanýlýr. Bu deyim, yanda gösterilen þekilde tanýmlanýr. Döngü içinde bu deyime sýra geldiðinde, break ardýndan döngü sonuna kadar olan tüm deyimler atlanýr ve döngüye bir sonraki adýmdan itibaren devam edilir. </span></p><span class="content">
+      <table border="0" cellspacing="0" cellpadding="10" width="235">
+        <tr class="imgdesc"> 
+          <td valign="top"> 
+            <p><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="221" height="300">
+                <param name=movie value="pics/B03/BP03055_7.swf">
+                <param name=quality value=high>
+                <embed src="pics/B03/BP03055_7.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="221" height="300">
+                </embed> 
+              </object></p>
+            <p><b>Þekil 3:</b> break komutu çalýþma prensibi </p>
+          </td>
+        </tr>
+      </table>
+      </span> 
+      <p><span class="content">Bir döngüyü terketmeden bir adýmýnýn atlanmasý söz konusu ise, continue deyimi kullanýlýr,</p>
+      <table border="0" cellspacing="0" cellpadding="10">
+        <tr>
+          <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="221" height="300">
+              <param name=movie value="pics/B03/BP03055_8.swf">
+              <param name=quality value=high>
+              <embed src="pics/B03/BP03055_8.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="221" height="300">
+              </embed> 
+            </object></td>
+          <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="221" height="300">
+              <param name=movie value="pics/B03/BP03055_9.swf">
+              <param name=quality value=high>
+              <embed src="pics/B03/BP03055_9.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="221" height="300">
+              </embed> 
+            </object></td>
+        </tr>
+      </table>
+      <p><span class="content">Bu deyim döngünün iþlemesini sona erdirmez, sadece bir sonraki döngü adýmýna geçilmesini saðlar. Eðer for döngüsü kullanýlýyorsa, iþlem sýrasý bu deyime geldiðinde, bu deyimden döngü sonuna kadar olan deyimler çalýþmaz, döngü bir artýrýlarak sonraki döngüye geçilir. Eðer while döngüsü kullanýlýyorsa, continue deyimine sýra  geldiðinde, döngü içinde bu deyimden sonraki tüm deyimler atlanýr ve koþul saðlandýðý sürece döngüye devam edilir.</p>
+      <span class="content"><table border="0" cellspacing="0" cellpadding="10">
+        <tr>
+          <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="591" height="300">
+              <param name=movie value="pics/B03/BP03055_6.swf">
+              <param name=quality value=high>
+              <embed src="pics/B03/BP03055_6.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="591" height="300">
+              </embed> 
+            </object></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+    </span></td>
+  </tr>
+</table>
+</body>
+</html>

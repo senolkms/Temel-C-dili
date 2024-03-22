@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>BP08045</title>
+<meta http-equiv="Content-Type" content="text/html; charset=8859-9">
+<link rel="stylesheet" href="abstyle.css" type="text/css">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table width="100%" border="0" cellpadding="15" cellspacing="0">
+  <tr> 
+    <td width="100%" valign="top"><span class="altbaslik">8.2.3. BÝR DOSYAYA ÝKÝLÝ YAPIDA 
+      VERÝ YAZDIRMA</span> 
+      <p class="content">Þu ana kadar ele alarak incelediðimiz yazma fonksiyonlarý 
+        metin (text) dosyalara kayýt yapýyordu. Dolayýsýyla herhangi bir metin 
+        editörle dosyanýn içeriðini doðrudan görebiliyorduk. Verileri bir dosya 
+        içine <b>ikili yapýda (binary)</b> olarak saklamak söz konusu ise bu kez 
+        <b>fwrite</b> fonksiyonu kullanýlýr. Bu fonksiyon aþaðýdaki gibi tanýmlanmaktadýr:</p>
+      <p class="content">
+      <table width="77%" border="1" cellspacing="0" cellpadding="15" bordercolor="#000066" bgcolor="#FFFFFF">
+        <tr> 
+          <td height="28" width="100%" class="content" align="left" bgcolor="#FFFFCC" valign="top"> 
+            <b>&nbsp&nbsp&nbsp&nbspfwrite ( <u>bellek</u>, <u>boyutu</u>, <u>sayýsý</u>, 
+            <u>dosya göstergesi</u>)</b></td>
+        </tr>
+      </table>
+      <p>
+      <table width="77%" border="1" bgcolor="#FFFFCC" bordercolor="#000000" cellpadding="15" cellspacing="0">
+        <tr> 
+          <td class="content" width="183"> <b>bellek</b></td>
+          <td class="content" width="473">Dosyaya yazdýrýlacak verinin geçici 
+            olarak bellekte saklandýðý alan.</td>
+        </tr>
+        <tr> 
+          <td class="content"><b>boyutu</b></td>
+          <td class="content">Yazdýrýlacak alanýn uzunluðu. </td>
+        </tr>
+        <tr> 
+          <td class="content"><b>sayýsý</b></td>
+          <td class="content">Bu verinin tekrarlanma sayýsý. </td>
+        </tr>
+        <tr> 
+          <td class="content"><b>dosya göstergesi</b></td>
+          <td class="content">Dosyanýn göstergesi.</td>
+        </tr>
+      </table>
+      <p class="content">Örnek olarak aþaðýdaki fonksiyonu göz önüne alalým: </p>
+      <p class="content"><b> fwrite(a, sizeof(a),1,dg);</b></p>
+      <p><span class="content">Bu tanýmdan þu anlaþýlmaktadýr: Söz konusu yazdýrma 
+        iþleminde <b>a</b> isimli bir alan kullanýlacaktýr. Bu alanýn uzunluðu 
+        <b>sizeof()</b> iþleci ile tanýmlanmaktadýr. Alan içeriði bir kez kaydedilecektir 
+        ve yazdýrýlacak dosya <b>dg</b> isimli gösterge ile tanýmlanmaktadýr. 
+        </span></p>
+      <p><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="590" height="140">
+          <param name=movie value="pics/B08/BP08045_1.swf">
+          <param name=quality value=high>
+          <embed src="pics/B08/BP08045_1.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="590" height="140">
+          </embed> 
+        </object> </p>
+      <p><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="591" height="300">
+          <param name=movie value="pics/B08/BP08045_2.swf">
+          <param name=quality value=high>
+          <embed src="pics/B08/BP08045_2.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="591" height="300">
+          </embed> 
+        </object></p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

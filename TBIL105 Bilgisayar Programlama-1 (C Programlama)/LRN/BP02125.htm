@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>BP02125</title>
+<meta http-equiv="Content-Type" content="text/html; charset=8859-9">
+<link rel="stylesheet" href="abstyle.css" type="text/css">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table width="100%" border="0" cellpadding="15" cellspacing="0">
+  <tr> 
+    <td height="97" valign="top" colspan="2"><span class="altbaslik">2.8.1.3. Aritmetik 
+      Ýþleçlerin Atama Ýþleciyle Birlikte Kullanýmý </span> 
+      <p class="content">Artýrma ve azaltma iþleçleri tek baþlarýna kullanýldýðýnda, 
+        ilgili deðiþkenin deðeri bir artýyor veya azalýyordu. Bu iþleçler atama 
+        deyimi ile birlikte kullanýldýðýnda, deðiþkenin önünde yada arkasýnda 
+        olmasý durumuna göre farklý sonuçlara neden olmaktadýr. Örneðin,</p>
+    </td>
+  </tr>
+  <tr> 
+    <td valign="top" height="76" width="385"> 
+      <table width="100%" border="1" cellspacing="0" cellpadding="5" bordercolor="#000066" bgcolor="#FFFFFF">
+        <tr> 
+          <td height="44" width="77%" valign="middle" class="content" align="center" bgcolor="#FFFFCC"><b>a=sayac++;</b></td>
+        </tr>
+      </table>
+    </td>
+    <td width="558"></td>
+  </tr>
+  <tr> 
+    <td height="69" colspan="2" valign="top" class="content">deyimi söyle çalýþacaktýr: 
+      Önce <b>sayac</b> isimli deðiskenin deðeri a deðiþkeni içine atanacak, ardýndan 
+      <b>sayac</b> 'ýn deðeri <b>1</b> artacaktýr. Örneðin sayac deðiþkeninin 
+      deðeri <b>5</b> ise, bu iþlem sonucunda a 'nýn da deðeri <b>5</b> olacaktýr. 
+      Ancak <b>sayac</b> deðiþkeninin deðeri <b>6</b> olacaktýr. Buna karþýlýk,</td>
+  </tr>
+  <tr> 
+    <td height="76" valign="top"> 
+      <table width="100%" border="1" cellspacing="0" cellpadding="5" bordercolor="#000066" bgcolor="#FFFFFF">
+        <tr> 
+          <td height="44" width="77%" valign="middle" class="content" align="center" bgcolor="#FFFFCC"><b>a=++sayac;</b></td>
+        </tr>
+      </table>
+    </td>
+    <td></td>
+  </tr>
+  <tr> 
+    <td height="381" colspan="2" valign="top" class="content"> 
+      <p>biçimindeki bir taným farklý bir sonuç yaratacaktýr. Bu durumda <b>sayac</b> 
+        deðiþkeninin deðeri <b>1</b> artýrýlýr ve bulunan deðer <b>a</b> deðiþkenine 
+        aktarýlýr. Söz konusu <b>sayac</b> deðiskeninin deðeri <b>5</b> ise, bu 
+        atama sonucunda <b>a</b> 'nýn deðeri <b>6</b> olacaktýr. </p>
+      <p class="baslik"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="590" height="300">
+          <param name=movie value="pics/B02/BP02125_1.swf">
+          <param name=quality value=high>
+          <embed src="pics/B02/BP02125_1.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="590" height="300">
+          </embed> 
+        </object></p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

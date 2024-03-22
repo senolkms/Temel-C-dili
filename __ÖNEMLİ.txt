@@ -1,0 +1,3 @@
+C ve C++'da Türkçe karakter sorununu gidermek için þunlar yapýlmalýdýr;
+	1- #include<locale.h> ve
+	2- main fonksiyonuna setlocale(LC_ALL, "Turkish"); eklenmelidir.
